@@ -58,7 +58,7 @@ function checkAnswer(elAnswer) {
         setTimeout(() => {
             const elBody = document.querySelector('body')
             const elHeader = document.querySelector('h1')
-            elBody.style.backgroundImage = "url('../photos/back.jpg')"
+            elBody.style.backgroundImage = "url('./photos/back.jpg')"
             elHeader.style.backgroundColor = 'white'
         }, 100)
     }
@@ -101,6 +101,6 @@ function onOpenModal() {
 }
 
 function PlaySound(sound) {
-    var audio = new Audio('../sounds/' + sound + '.mp3')
+    var audio = new Audio('./sounds/' + sound + '.mp3')
     audio.play()
 }
